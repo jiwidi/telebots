@@ -3,18 +3,6 @@ import datetime
 from telebot import types
 global cinturon
 
-cinturon= "258127468:AAGyTigu28F40W4RL2iVckia0mWsrvJu17Y"
-markup = types.ReplyKeyboardMarkup(selective=True)
-itembtna = types.KeyboardButton('tensian')
-itembtnv = types.KeyboardButton('el novio mas fuerte del mundo')
-itembtnc = types.KeyboardButton('agus el rojete')
-itembtnd = types.KeyboardButton('forri el fachita')
-itembtne = types.KeyboardButton('ortegote')
-itembtnf = types.KeyboardButton('rafita')
-itembtng = types.KeyboardButton('navarro, kappa')
-itembtnh = types.KeyboardButton('server el que ya no consume')
-itembtni = types.KeyboardButton('gine pollete')
-markup.add(itembtna,itembtnv,itembtnc,itembtnd,itembtne,itembtnf,itembtng,itembtnh,itembtni)
 bot= telebot.TeleBot("278966420:AAFWj56xjJQLIKN4vr0EGj1v3q-Ac93oIdQ")
 markup2= types.ForceReply(selective=False)
 strs = ["" for x in range(20)]
