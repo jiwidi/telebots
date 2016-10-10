@@ -100,12 +100,14 @@ def echo_all(message):
         bot.reply_to(message,'ortega libre')
     elif 'novio' in message.text:
         bot.reply_to(message,'pero ese novio esta mas fuerte que lillo?')
-    elif 'españa' in message.text: 
+    elif 'espana' in message.text: 
         bot.send_message(message.chat.id,'casalla contra espanya')
-    elif 'España' in message.text:
+    elif 'Espana' in message.text:
         bot.send_message(message.chat.id,'casalla contra espanya')
     elif 'podemos' in message.text:
         bot.send_message(message.chat.id,'que vienen los rojosssss')
+    elif 'interrail' in message.text:
+        bot.reply_to(message,'chu chu chuuu')
     elif 'novia de giner' in message.text:
         bot.reply_to(message,'yo aun no la he visto huehue')
     elif 'reply this shit with yes or no' in message.text:
