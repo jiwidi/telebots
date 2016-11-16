@@ -17,17 +17,17 @@ def send_Rpepe(message):
 	if(type == 0):
 		id=random.randint(0,694)
 		type=".jpg"
-		dir="/home/jiwidi/GITHUB/telebots/pepes/jpg/"
+		dir="/home/pi/Desktop/Bots/pepes/jpg/"
 		contador=id+526+32
 	elif(type == 1):
 		id=random.randint(0,526)
 		type=".png"
-		dir="/home/jiwidi/GITHUB/telebots/pepes/png/"
+		dir="/home/pi/Desktop/Bots/pepes/png/"
 		contador=id+694+32
 	elif(type == 2):
 		id=random.randint(0,32)
 		type=".gif"
-		dir="/home/jiwidi/GITHUB/telebots/pepes/gif/"
+		dir="/home/pi/Desktop/Bots/pepes/gif/"
 		contador=id+526+694
 	id=str(id)
 	file= open(dir+id+type,'rb')
