@@ -16,17 +16,21 @@ def num(s):
 @bot.message_handler(commands=['getpepe'])
 def send_Pepe(message):
     number=message.text[8:]
-    number=number.strip();
-    filename = glob.glob(number+'*.*')
-    extension= os.path.splitext(filename[0])[1]
-    file= open(filename[0],'rb')
-    
-    if(extension==".gif"):
-        bot.send_document(message.chat.id,file)
-    else:
+    aux=int(float(number))
+    if(aux>=0 and aux<=1252):
+        number=number.strip();
+        filename = glob.glob(number+'*.*')
+        extension= os.path.splitext(filename[0])[1]
         file= open(filename[0],'rb')
-        bot.send_photo(message.chat.id, file);
-    file.close()
+    
+        if(extension==".gif"):
+            bot.send_document(message.chat.id,file)
+        else:
+            file= open(filename[0],'rb')
+            bot.send_photo(message.chat.id, file);
+        file.close()
+    else:
+        bot.send_message(message.chat.id,'wrong number');
 @bot.message_handler(commands=['randompepe'])
 def send_Rpepe(message):
     id=random.randint(0,1252)
