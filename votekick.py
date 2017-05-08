@@ -3,7 +3,7 @@ import datetime
 from telebot import types
 global cinturon
 
-bot= telebot.TeleBot("278966420:AAFWj56xjJQLIKN4vr0EGj1v3q-Ac93oIdQ")
+bot= telebot.TeleBot("")
 markup2= types.ForceReply(selective=False)
 strs = ["" for x in range(20)]
 votadosi=0
