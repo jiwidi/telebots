@@ -4,7 +4,7 @@ import datetime
 from telebot import types
 global cinturon
 
-cinturon= "258127468:AAGyTigu28F40W4RL2iVckia0mWsrvJu17Y"
+cinturon= ""
 markup = types.ReplyKeyboardMarkup(selective=True)
 itembtna = types.KeyboardButton('tensian')
 itembtnv = types.KeyboardButton('el novio mas fuerte del mundo')
